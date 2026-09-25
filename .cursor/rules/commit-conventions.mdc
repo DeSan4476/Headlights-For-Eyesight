@@ -9,6 +9,7 @@ Use [Conventional Commits](https://www.conventionalcommits.org/) for branch name
 
 - Branch: `<type>/<short-description>` in kebab-case. Example: `fix/contact-email-overflow`.
 - Title: `<type>: <imperative summary>`. Example: `fix: keep the contact email inside its card`.
+- Use the same `<type>` in the branch name and title.
 - Use `feat` for a new capability, `fix` for a bug, and `chore` for maintenance that does not change site behavior.
 - Do not use `bug`, `bugfix`, `feature`, `features`, or `bugs` as the type.
 - Keep the title to one line. Do not append a pull request number.
