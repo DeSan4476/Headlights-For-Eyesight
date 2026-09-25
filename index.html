@@ -238,10 +238,12 @@
   .pull-quote{ font-family:'Bitter',serif; font-style:italic; font-weight:600; font-size:1.25rem; color:var(--terracotta-ink); border-left:4px solid var(--terracotta); padding-left:1.1rem; margin:1.8rem 0; max-width:52ch; }
 
   /* ================= CONTACT ================= */
-  .contact-panel{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.4rem; margin-top:2rem; }
-  .contact-tile{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:1.7rem; }
+  .contact-col{ max-width:40rem; margin:0 auto; text-align:center; }
+  .contact-col > p{ color:var(--stone); margin:0.6rem auto 0; }
+  .contact-panel{ display:grid; grid-template-columns:1fr; gap:1rem; margin-top:2rem; }
+  .contact-tile{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:1.4rem 1.5rem; min-width:0; text-align:center; }
   .contact-tile .eyebrow{ color:var(--stone); }
-  .contact-tile a.big{ display:flex; align-items:center; gap:0.6rem; font-family:'Bitter',serif; font-weight:700; font-size:1.15rem; margin-top:0.6rem; text-decoration:none; color:var(--ink); }
+  .contact-tile a.big{ display:flex; align-items:flex-start; justify-content:center; gap:0.6rem; min-width:0; overflow-wrap:anywhere; font-family:'Bitter',serif; font-weight:700; font-size:1.15rem; margin-top:0.6rem; text-decoration:none; color:var(--ink); }
   .contact-tile a.big:hover{ color:var(--terracotta-ink); }
   .contact-tile svg{ width:20px; height:20px; flex:none; color:var(--terracotta); }
   .open-banner{ margin-top:2rem; background:linear-gradient(120deg,var(--terracotta),var(--ochre)); color:#fff8ef; border-radius:20px; padding:1.6rem 2rem; text-align:center; font-family:'Bitter',serif; font-weight:700; font-size:1.15rem; }
@@ -636,9 +638,10 @@
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="view">
       <div class="wrap" style="padding-top:3rem; padding-bottom:2rem;">
+        <div class="contact-col">
         <p class="eyebrow">Let's talk</p>
         <h2 style="font-size:clamp(1.5rem,3vw,2.1rem); font-weight:700; margin-top:0.5rem;">Contact Us</h2>
-        <p style="color:var(--stone); margin-top:0.6rem; max-width:52ch;">Open for business and partnership inquiries &mdash; reach out any time.</p>
+        <p>Open for business and partnership inquiries &mdash; reach out any time.</p>
 
         <div class="contact-panel">
           <div class="contact-tile">
@@ -656,6 +659,7 @@
         </div>
 
         <div class="open-banner">Open for business &amp; partnership inquiries &mdash; let's talk.</div>
+        </div>
       </div>
     </section>
 
